@@ -1,5 +1,7 @@
 # SRN - CMS Development
+<img align="right" src="logo.png" />
 
+## SRN CRM Content Management System
 SRN Repository for Content Management Dev
 
 Specifications :<br/>
