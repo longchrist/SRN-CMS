@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="web_resources/images/favicon.ico" type="image/ico" />
 
-    <title>Gentelella Alela! | </title>
+    <title>SRN Mobile CMS | Dashboard</title>
 
     <!-- Bootstrap -->
     <link href="web_resources/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>SRN Mobile CMS</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo base_url(); ?>user/user_profile">DATA General</a></li> <!-- examplenya ke luar -->
-                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="<?php echo base_url(); ?>brand/master_brand">Advanced Components</a></li>
                       <li><a href="form_validation.html">Form Validation</a></li>
                       <li><a href="form_wizards.html">Form Wizard</a></li>
                       <li><a href="form_upload.html">Form Upload</a></li>
