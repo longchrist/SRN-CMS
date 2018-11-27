@@ -390,8 +390,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 		function initTabelBrandResult(response){
-			var body = "";
 			var no = 1;
+			var body = "";
 			var header = '<thead> \
 							<tr style="background-color:#2A3F54; color:#FFF;" height=30>\
 							<td width=20 align="center" class="hurufcol">No.</td>\
@@ -407,11 +407,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							
 			for(var i = 0; i < response[0].data.length; i++){
 				var colorModulus = (i%2 == 0) ? 'style="background-color:#DDD; color:#000; cursor: pointer;"' : 'style="background-color:#EEE; color:#000; cursor:pointer;"';
-				//console.log("hasil : "+response[0].data[i].brand_id);
-				//console.log("hasil : "+response[0].data[i].brand_name);
-				//console.log("hasil : "+response[0].data[i].brand_image_url);
-				//console.log("hasil : "+response[0].data[i].created);
-				//console.log("hasil : "+response[0].data[i].last_updated);
 				body += '<tr '+colorModulus+' cellspacing="1" cellpadding="1" class="huruf2 clickableTabelBarang">\
 						<td width=20 id="" style="border-bottom: solid #CCCCCC; border-right: solid #CCCCCC;" align=center >'+no+'</td>\
 						<td width=20 id="" style="border-bottom: solid #CCCCCC; border-right: solid #CCCCCC;" align=center >'+response[0].data[i].brand_id+'</td>\
@@ -441,8 +436,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$('#tabelBrand').dataTable().fnDestroy();
 			$('#tabelBrand').dataTable({fixedHeader: true, "lengthMenu": [[25, 50, 100], [25, 50, 100]],dom: "<'row'<'col-sm-6'l><'col-sm-6'f>><'row'<'col-sm-12'tr>><'row'<'col-sm-4'i><'col-sm-8'p>>"});
 		}
-		// ------- end -------
-
+		// ------- end ------- 
 		function onError(e){
 			console.log(e);
 		}

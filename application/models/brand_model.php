@@ -3,7 +3,7 @@
 class brand_model extends CI_Model{
 
     /**
-    *   Updates users last active 
+    *   retrieve all brand
     */
     public function retrieveAllBrands(){
 		$result = array();
@@ -17,6 +17,36 @@ class brand_model extends CI_Model{
 
 		return json_encode($result);
     }
+	
+	/**
+    *   retrieve one brand
+    */
+	public function retrieveOneBrand(){
+		
+	}
+	
+	/**
+    *   save a new brand
+    */
+	public function saveNewBrand(){
+		
+	}
+	
+	/**
+    *   edit brand data
+    */
+	public function editBrand(){
+		
+	}
+	
+	/**
+    *   delete brand data
+    */
+	public function deleteBrand(){
+		
+	}
+	
+	/*** EOF brand_model.php */
 }
 
 ?>
